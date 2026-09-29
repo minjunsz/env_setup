@@ -1,0 +1,19 @@
+syntax on             " 문법 강조(Syntax Highlighting) 켜기
+set number            " 줄 번호 표시
+" set relativenumber    " 현재 줄 기준 상대적인 줄 번호 표시 (점프할 때 유용)
+set ruler             " 커서 위치(좌표) 표시
+set cursorline        " 현재 커서가 있는 줄 강조
+
+set autoindent        " 자동 들여쓰기
+set smartindent       " 스마트 들여쓰기
+set tabstop=4         " 탭을 4칸 공백으로 인식
+set shiftwidth=4      " >>, << 명령으로 들여쓰기 시 4칸 이동
+set expandtab         " 탭 입력 시 공백(Space)으로 변환 (Python 필수)
+
+set hlsearch          " 검색어 강조 표시
+set incsearch         " 검색어 입력 중 실시간 매칭
+set ignorecase        " 대소문자 무시하고 검색
+set smartcase         " 검색어에 대문자가 섞여 있으면 대소문자 구분
+
+set encoding=utf-8    " 인코딩 UTF-8 설정
+set showmatch         " 괄호 짝 하이라이팅

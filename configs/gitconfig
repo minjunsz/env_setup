@@ -1,0 +1,14 @@
+# user.name / user.email 은 ~/.gitconfig.local 에 둔다 (install.sh 가 생성)
+[include]
+	path = ~/.gitconfig.local
+[init]
+	defaultBranch = main
+[core]
+	excludesFile = ~/.config/git/ignore
+[credential]
+	helper = store
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
